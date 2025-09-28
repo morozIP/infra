@@ -1,0 +1,27 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: footest-app-manual-1
+  labels:
+    app: footest
+    env: prod
+spec:
+  containers:
+    - name: footest-app-1
+      image: morozip/footest:0.1
+      ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: footest-app-manual-2
+  labels:
+    app: http-server
+    env: dev
+spec:
+  containers:
+    - name: footest-app-1
+      image: morozip/footest:0.1
+      ports:
+        - containerPort: 8000

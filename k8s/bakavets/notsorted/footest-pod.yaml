@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-footest-2
+  labels:
+    app: footest-1
+spec:
+  containers:
+    - name: app-footest-container
+      image: morozip/footest:0.1
+      ports:
+        - containerPort: 8080

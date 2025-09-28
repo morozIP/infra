@@ -1,0 +1,19 @@
+﻿apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: footest-rc
+spec:
+  replicas: 3
+  selector:
+    app: http-server
+  template:
+    metadata:
+      name: footest-app
+      labels:
+        app: http-server
+    spec:
+      containers:
+        - name: footest-app-image
+          image: morozip/footest:0.1
+          ports:
+            - containerPort: 8000

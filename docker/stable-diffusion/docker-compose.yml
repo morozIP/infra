@@ -1,0 +1,12 @@
+services:
+  stable-diffusion:
+    image: automatic1111/stable-diffusion-webui:latest
+    container_name: stable-diffusion-webui
+    runtime: nvidia
+    environment:
+      - CLI_ARGS=--no-half --listen --port 7860
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./outputs:/stable-diffusion/outputs
+      - ./models:/stable-diffusion/models
