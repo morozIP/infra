@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n # Официальный образ n8n
+    container_name: n8n # Имя контейнера
+    ports:
+      - "5678:5678" # Порт для доступа к веб-интерфейсу
+    volumes:
+      # Постоянное хранение данных n8n (рабочие процессы, учетные данные и т.д.)
+      - n8n_data:/home/node/.n8n
+    environment:
+      # Настройки часового пояса (замените на свой, например, Europe/Moscow)
+      - GENERIC_TIMEZONE=Europe/Kiev
+      # Установите URL для внешнего доступа, если используете прокси
+      # - N8N_HOST=localhost
+      # - N8N_PROTOCOL=http
+      # Включите базовую аутентификацию (ОЧЕНЬ РЕКОМЕНДУЕТСЯ)
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=user
+      - N8N_BASIC_AUTH_PASSWORD=your_strong_password
+      # Установка ключа шифрования (ОБЯЗАТЕЛЬНО для продакшена)
+      - N8N_ENCRYPTION_KEY=your_super_secret_key_12345
+      # Другие переменные окружения
+      - TZ=Europe/Kiev
+
+volumes:
+  n8n_data: # Объявление тома для данных
