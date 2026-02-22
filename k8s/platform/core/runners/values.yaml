@@ -1,0 +1,16 @@
+gitlabUrl: https://gitlab.k8splatform.com/
+runnerRegistrationToken: "TOKEN_FROM_GITLAB_ADMIN_AREA" # Или используйте новый метод через Runner Token
+
+rbac:
+  create: true
+
+runners:
+  config: |
+    [[runners]]
+      [runners.kubernetes]
+        namespace = "gitlab-runners"
+        image = "ubuntu:22.04"
+        privileged = true # Нужно для Docker-in-Docker (сборка образов)
+        # Ресурсы для каждого джоба
+        cpu_request = "500m"
+        memory_request = "512Mi"

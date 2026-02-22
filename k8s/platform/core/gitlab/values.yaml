@@ -1,0 +1,19 @@
+global:
+  hosts:
+    domain: k8splatform.com # Замените на ваш домен
+  ingress:
+    configureCertmanager: true
+    class: nginx
+
+certmanager-issuer:
+  email: admin@k8splatform.com
+
+gitlab:
+  webservice:
+    minReplicas: 1
+    maxReplicas: 2
+  sidekiq:
+    minReplicas: 1
+  # Включаем встроенный Registry для Docker образов
+  container-registry:
+    enabled: true

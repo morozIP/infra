@@ -1,0 +1,16 @@
+2025/12/18 20:51:08 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/12/18 20:55:41 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/12/18 21:12:06 [error] 29#29: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/18 21:12:50 [error] 29#29: *1 open() "/usr/share/nginx/html/500" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /500 HTTP/1.1", host: "localhost"
+2025/12/18 21:19:15 [error] 29#29: *3 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:26:35 [error] 29#29: *4 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:28:56 [warn] 1#1: conflicting server name "localhost" on 0.0.0.0:80, ignored
+2025/12/18 21:29:51 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:51 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:51 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:51 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:51 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:52 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:52 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:52 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
+2025/12/18 21:29:52 [error] 22#22: *1 open() "/usr/share/nginx/html/asdfgf" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /asdfgf HTTP/1.1", host: "localhost"
