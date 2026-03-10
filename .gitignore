@@ -14,3 +14,6 @@
 
 /docker/observability/logging/elk/elasticsearch/data/
 /docker/observability/logging/var/
+
+
+__pycache__/
