@@ -1,0 +1,6 @@
+.techradar/
+node_modules/
+package-lock.json
+custom.css
+about.md
+build/
